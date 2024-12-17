@@ -2,7 +2,17 @@
 
 
 #include "Character/ErrbaEnemy.h"
+
+#include "AbilitySystem/ErrbaAbilitySystemComponent.h"
 #include "GASTest/GASTest.h"
+
+AErrbaEnemy::AErrbaEnemy()
+{
+	GetMesh()->SetCollisionResponseToChannel(ECC_Visibility,ECR_Block);
+
+	AbilitySystemComponent = CreateDefaultSubobject<UErrbaAbilitySystemComponent>("AbilitySystem_Component");
+	AbilitySystemComponent->SetIsReplicated(true);
+}
 
 void AErrbaEnemy::HightLightActor()
 {

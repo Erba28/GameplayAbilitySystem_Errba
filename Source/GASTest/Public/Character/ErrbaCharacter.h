@@ -14,4 +14,6 @@ class GASTEST_API AErrbaCharacter : public AErrbaCharacterBase
 {
 	GENERATED_BODY()
 	
+public:
+	AErrbaCharacter();
 };

@@ -22,6 +22,7 @@ class GASTEST_API IEnemyInterface
 
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
+	//纯虚函数,不会被定义的抽象类，必须派生并定义
 	virtual void HightLightActor() = 0;
 	virtual void UnHightLightActor() = 0;
 };

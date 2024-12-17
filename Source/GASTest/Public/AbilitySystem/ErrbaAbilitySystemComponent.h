@@ -15,3 +15,4 @@ class GASTEST_API UErrbaAbilitySystemComponent : public UAbilitySystemComponent
 	GENERATED_BODY()
 	
 };
+ 

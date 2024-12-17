@@ -16,8 +16,9 @@ class GASTEST_API AErrbaEnemy : public AErrbaCharacterBase,public IEnemyInterfac
 	GENERATED_BODY()
 
 public:
-	UPROPERTY(BlueprintReadOnly)
-	bool bHightLightActor = false;	
+	//UPROPERTY(BlueprintReadOnly)
+	//bool bHightLightActor = false;
+	AErrbaEnemy();
 	virtual void HightLightActor() override;
 	virtual void UnHightLightActor() override;
 };
